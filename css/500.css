@@ -1,0 +1,8 @@
+@media all and (min-width:500px) and (max-width:500px) {
+
+  .contact__message {
+    span {
+      font-size: 25px;
+    }
+  }
+}

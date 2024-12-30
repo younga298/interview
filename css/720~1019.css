@@ -1,0 +1,114 @@
+@media all and (min-width:720px) and (max-width:1019px) {
+
+  .header__close-btn {
+    display: none;
+  }
+
+  .home__text-box {
+    width: 100%;
+  }
+
+  .home__text-parent {
+    font-size: 87px;
+    padding-right: 142px;
+  }
+
+  .home__text-sub {
+    font-size: 150px;
+    line-height: 130px;
+  }
+
+  .font {
+    font-size: 70px;
+  }
+
+  .profile__details {
+    align-items: center;
+    flex-direction: column;
+    /* padding: 46px 0 0px 0px; */
+  }
+
+  .profile__skills-box {
+    margin-top: 55px;
+  }
+
+  .profile__skills-box-details {
+    height: 165px;
+    padding: 18px;
+    font-size: 16px;
+  }
+
+  .profile__skills {
+    width: 100%
+  }
+
+  .profile__skills-section {
+    width: 100%;
+  }
+
+
+  .profile__box .profile__intro-image {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .profile__intro {
+    align-items: center;
+  }
+
+  .profile__intro-text {
+    font-size: 25px;
+    width: 375px;
+  }
+
+  .profile__box {
+    .profile__intro-text {
+
+      font-size: 20px
+    }
+  }
+
+
+
+
+  #profile {
+    height: 1500px;
+  }
+
+  .project__items {
+    padding-top: 0;
+  }
+
+  .project__items .project__item--details {
+    padding-top: 110px;
+  }
+
+  .project__description--text {
+    font-size: 16px;
+  }
+
+  .popup__details {
+    font-size: 13px;
+  }
+
+  .resume__content {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+  }
+
+
+
+  .resume__subtitle {
+    width: 90%;
+  }
+
+  .resume__skills {
+    margin-left: -59px;
+    padding-top: 100px;
+  }
+
+
+}

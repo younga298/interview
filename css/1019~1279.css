@@ -1,0 +1,83 @@
+@media all and (min-width:1019px) and (max-width:1279px) {
+
+  .header__close-btn {
+    display: none;
+  }
+
+  .home__text-box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__text-parent {
+    font-size: 130px;
+    padding-right: 110px;
+  }
+
+  .home__text-sub {
+    font-size: 200px;
+  }
+
+  .profile_box {
+    .profile__intro-image {
+      width: 387px;
+      height: 484px;
+    }
+  }
+
+  .profile__box .profile__intro-image {
+    width: 350px;
+    height: 450px;
+  }
+
+  .profile__details {
+    padding: 0;
+  }
+
+  .profile__box .profile__intro-text {
+    font-size: 20px;
+  }
+
+  .resume__content {
+    flex-direction: column;
+    width: 92%;
+
+    div {
+      width: 100%;
+    }
+  }
+
+  .resume__skills-list {
+    margin-left: 28px;
+  }
+
+  .profile_skills-section {
+    width: 48%;
+  }
+
+  .profile__skills-box-details {
+    padding: 19px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+
+
+
+
+
+  .parent_text {
+    font-size: 90px;
+
+  }
+
+  .subtext {
+    font-size: 200px;
+
+  }
+}
+
+#projects .project__content .project__image--screenshot img {}
