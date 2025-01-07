@@ -1,8 +1,6 @@
 @media all and (min-width:720px) and (max-width:1019px) {
 
-  .header__close-btn {
-    display: none;
-  }
+
 
   .home__text-box {
     width: 100%;

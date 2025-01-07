@@ -83,6 +83,7 @@ li {
     display: block;
     margin: 6px;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .header__hamburger:hover {
@@ -129,9 +130,7 @@ header.hidden {
 }
 
 
-.header__close-btn {
-    display: none;
-}
+
 
 
 .header__nav-list {

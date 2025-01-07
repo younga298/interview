@@ -1,0 +1,89 @@
+@media all and (min-width:390px) and (max-width:500px) {
+  .home__text-parent {
+    font-size: 50px;
+  }
+
+
+  .font {
+    font-size: 50px;
+  }
+
+  .home__text-sub {
+    font-size: 80px;
+  }
+
+  .contact__message {
+    span {
+      font-size: 23px;
+    }
+  }
+
+
+  .header__nav-list {
+
+    padding: 60px 60px 160px 21px;
+
+  }
+
+  #profile {
+    padding-top: 0;
+  }
+
+  .project__content {
+    height: 740px;
+  }
+
+  .project__description--text {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+
+
+  .project__type {
+    font-size: 25px;
+  }
+
+  .project__number {
+    font-size: 24px;
+  }
+
+  .project__name {
+    font-size: 14px;
+  }
+
+  .project__description--title {
+    font-size: 18px;
+  }
+
+  .resume__item {
+    padding-right: 33px;
+  }
+
+  .resume__container h1 {
+    font-size: 2.8rem;
+  }
+
+  .resume__subtitle {
+    font-size: 25px;
+  }
+
+  .resume__item {
+    font-size: 15px;
+  }
+
+  .resume__skill-description {
+    font-size: 15px;
+  }
+
+  .resume__details {
+    padding-left: 40px;
+  }
+
+  .resume__skill-title {
+    font-size: 25px;
+  }
+
+  .resume__skill {
+    padding: 40px 0px 40px 35px;
+  }
+}
