@@ -8,8 +8,7 @@
     /* color: #333333; */
 }
 
-body,
-html {
+body {
     overflow-x: hidden;
 }
 
@@ -434,7 +433,8 @@ header.hidden {
 
 
 .project__header {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: flex-end;
     padding-top: 17rem;
@@ -443,7 +443,6 @@ header.hidden {
     opacity: 0;
     /* 초기 상태 */
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    width: 100%;
     display: flex;
     justify-content: space-between;
 }

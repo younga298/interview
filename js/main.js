@@ -17,22 +17,22 @@ $(document).ready(function () {
       // header 숨기기
       $('header').hide();
       // body 스크롤 숨기기
-      $('body').css('overflow', 'hidden');
+      $('body').css('overflow-y', 'hidden');
     }
   });
+
+
+  //닫기 버튼 설정
+
+  $('.popup__close').on('click', function () {
+    //popup 숨기기
+    $('.popup').hide();
+    // header 다시 보이기
+    $('header').show();
+    //body 스크롤 hidden 이면 ''
+    $('body').css('overflow-y', '');
+  })
 });
-
-//닫기 버튼 설정
-
-$('.popup__close').on('click', function () {
-  //popup 숨기기
-  $('.popup').hide();
-  // header 다시 보이기
-  $('header').show();
-  //body 스크롤 hidden 이면 ''
-  $('body').css('overflow', '');
-})
-
 
 // WORKS_POP 팝업창 스와이퍼
 
