@@ -16,3 +16,5 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollY = currentScrollY;
     });
 });
+
+$('.popup__details').scrollTop(0);
