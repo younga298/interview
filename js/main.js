@@ -1,40 +1,31 @@
 
-// 팝업창 들어가기
 
 $(document).ready(function () {
-  // 'Details' 링크에 대한 클릭 이벤트 리스너 설정
   $('.project__button').on('click', function (e) {
-    e.preventDefault(); // 기본 동작 방지
-    var targetId = $(this).data('target'); // data-target 속성 값 가져오기
-    var targetDiv = $('#popup' + targetId); // 대상 div 선택
+    e.preventDefault();
+    var targetId = $(this).data('target');
+    var targetDiv = $('#popup' + targetId);
 
-    //popup 숨기기
     $('.popup').hide();
 
-    // 선택한 popup 보이기
     if (targetDiv.length) {
       targetDiv.show();
-      // header 숨기기
       $('header').hide();
-      // body 스크롤 숨기기
       $('body').css('overflow-y', 'hidden');
     }
   });
 
 
-  //닫기 버튼 설정
 
   $('.popup__close').on('click', function () {
-    //popup 숨기기
+
     $('.popup').hide();
-    // header 다시 보이기
     $('header').show();
-    //body 스크롤 hidden 이면 ''
     $('body').css('overflow-y', '');
+
   })
 });
 
-// WORKS_POP 팝업창 스와이퍼
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
@@ -45,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//profile페이지 opacity 설정
 
 $(document).ready(function () {
   const $profileBox = $('.profile__box');
@@ -71,13 +61,12 @@ $(document).ready(function () {
     }
   }
 
-  $(window).on('scroll', handleScroll); // scroll 이벤트 등록
-  handleScroll(); // 초기 로드 시 스크롤 위치를 확인
+  $(window).on('scroll', handleScroll);
+  handleScroll();
 });
 
 
 
-//RESUME페이지 opacity 설정
 
 $(document).ready(function () {
   const $resumeBox = $('.resume__container');
@@ -108,18 +97,16 @@ $(document).ready(function () {
 });
 
 
-//project페이지 스크롤이벤트
 
 $(document).ready(function () {
   var $titleWorkPro = $('.project__header');
   var $projectListBoxes = $('.project__content');
-  var animationOffset = 100; // 애니메이션 시작 오프셋
+  var animationOffset = 100;
 
   function checkVisibility() {
     var windowHeight = $(window).height();
     var scrollTop = $(window).scrollTop();
 
-    // title_work_pro 애니메이션
     $titleWorkPro.each(function () {
       var $this = $(this);
       var titleOffset = $this.offset().top;
@@ -132,13 +119,13 @@ $(document).ready(function () {
         });
       } else {
         $this.css({
-          'transform': 'translateX(100%)',  // 요소 자체의 너비만큼 이동
+          'transform': 'translateX(100%)',
           'opacity': '0'
         });
       }
     });
 
-    // PROJECT_list_box 애니메이션
+
     $projectListBoxes.each(function () {
       var $this = $(this);
       var elementOffset = $this.offset().top;
@@ -162,21 +149,20 @@ $(document).ready(function () {
     checkVisibility();
   });
 
-  // 페이지 로드 시 초기 상태 확인
   checkVisibility();
 });
 
 
-// A 태그 자연스럽게 이동하는 이벤트
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault(); // 기본 앵커 이동 방지
+    e.preventDefault();
 
     var target = document.querySelector(this.getAttribute('href'));
-    if (target) { // 대상 요소가 존재하는지 확인
-      window.scrollTo({ // 스크롤 이동
-        top: target.offsetTop, // 대상 요소의 상단 위치
-        behavior: 'smooth' // 부드러운 스크롤 효과 적용
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth'
       });
     }
   });
@@ -386,4 +372,4 @@ function newColour() {
   c.sort(function () { return (0.5 - Math.random()); });
   return ("rgb(" + c[0] + ", " + c[1] + ", " + c[2] + ")");
 }
-// ]]>
+

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('header');
-    var lastScrollY = 0; // 마지막 스크롤 위치를 저장할 변수
+    var lastScrollY = 0;
 
     window.addEventListener('scroll', function () {
-        var currentScrollY = window.scrollY; // 현재 스크롤 위치
+        var currentScrollY = window.scrollY;
 
         if (currentScrollY > lastScrollY) {
 
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('hidden');
         }
 
-        // 마지막 스크롤 위치를 업데이트
         lastScrollY = currentScrollY;
     });
 });
