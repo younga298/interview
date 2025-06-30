@@ -29,20 +29,13 @@
 
   <!--네비게이션-->
   <header>
-    <div class="header__three-col">
-
-      <div class="header__hamburger" id="hamburger-1">
-        <span class="header__line"></span>
-        <span class="header__line"></span>
-        <span class="header__line"></span>
-      </div>
-    </div>
-
-
-
-
+  <input type="checkbox" id="trigger">
+  <label for="trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
     <nav class="header__nav">
-
       <ul class="header__nav-list">
         <li><a href="#home" class="header__menu-link">HOME</a></li>
         <li><a href="#profile" class="header__menu-link">PROFILE</a></li>
@@ -51,14 +44,8 @@
         <li><a href="#contact" class="header__menu-link">CONTACT</a></li>
       </ul>
     </nav>
-
     <a href="#home" class="header__top-btn">TOP</a>
-
-
-
   </header>
-
-
   <section id="home">
     <div class="home__title">
       <div class="home__text-box">
@@ -72,9 +59,8 @@
       </div>
       <div class="home__mouse"><span></span></div>
     </div>
-
   </section>
-
+  <!-- 프로필 컨텐츠 -->
   <section id="profile">
     <div class="profile__box">
       <h1 class="point_font">profile</h1>
@@ -124,28 +110,60 @@
       </div>
     </div>
   </section>
-
+  <!--웹사이트소개 섹션 -->
   <section id="projects">
     <div class="projects__list">
-      <!--첫번째리스트-->
+      <!--소주한국학교-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font">work</h1>
           <div class="project__info">
-            <p class="project__number">project#1</p>
+            <p class="project__number">project#8</p>
             <p class="project__type">반응형 사이트</p>
             <p class="project__separator"></p>
-            <p class="project__name">삼양라운드</p>
+            <p class="project__name">소주한국학교</p>
           </div>
         </div>
-
         <div class="project__content">
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
                 <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__01.png" alt=""></div>
-                <!-- <div class="project__image--screenshot"></div> -->
+                <div class="project__image--screenshot"><img src="img/project__08.png" alt="소주한국학교 웹사이트 이미지"></div>
+              </div>
+            </li>
+            <li class="project__item project__item--details">
+              <div class="project__description">
+                <h3 class="project__description--title">소주한국학교</h3>
+                <p class="project__description--text">
+                해당 프로젝트는 PC에선 드롭다운, 모바일에선 햄버거 메뉴를 적용한 반응형 웹사이트입니다. Swiper.js로 메인 배너와 앨범에 자동 슬라이드를 구현했고, 미디어 쿼리로 해상도별 레이아웃을 유연하게 조정했습니다. 색상 변수와 유틸리티 클래스, 시맨틱 태그 등을 활용해 유지보수성과 접근성을 고려했습니다.
+                </p>
+              </div>
+              <div class="project__actions">
+                <button class="project__button" data-target="08">detail</button>
+                <a href="https://younga298.github.io/school-site/" target="_blank" class="project__link">보러가기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--삼양라운드-->
+      <div class="project">
+        <div class="project__header">
+          <h1 class="point-font">work</h1>
+          <div class="project__info">
+            <p class="project__number">project#7</p>
+            <p class="project__type">반응형 사이트</p>
+            <p class="project__separator"></p>
+            <p class="project__name">삼양라운드</p>
+          </div>
+        </div>
+        <div class="project__content">
+          <ul class="project__items">
+            <li class="project__item">
+              <div class="project__preview">
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__01.png" alt="삼양라운드 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -155,23 +173,21 @@
                   <b>리사이즈 이벤트</b>를 사용하여 웹사이즈 마다 적용되야 하는 css기능들이 중복되지 않게 하며 실시간으로 크기에 따라 레이아웃이 변하는 반응형 웹 제작에 중점을 두고
                   작업하였습니다.레이아웃은 px보다는 %와같은 상대단위를 사용하여 다양한 화면크기에서 유연하게 대응하도록 작업했습니다.
                 </p>
-
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="01">detail</button>
+                <button class="project__button" data-target="07">detail</button>
                 <a href="https://younga298.github.io/project1/" target="_blank" class="project__link">보러가기</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
-
-      <!--두번째 리스트-->
+      <!--국비 교육 포트폴리오-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font"></h1>
           <div class="project__info">
-            <p class="project__number">project#2</p>
+            <p class="project__number">project#6</p>
             <p class="project__type">2024 PORTFOLIO</p>
             <p class="project__separator"></p>
             <p class="project__name">국비 교육 포트폴리오</p>
@@ -181,18 +197,17 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__1.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__1.png" alt="국비 교육 포트폴리오 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
-
               <div class="project__description">
                 <h3 class="project__description--title">국비 교육 포트폴리오</h3>
                 <p class="project__description--text">6개월간의 교육과정을 통해 제작된 웹사이트를 소개하는 첫번째 포트폴리오 입니다.</p>
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="1">detail</button>
+                <button class="project__button" data-target="06">detail</button>
                 <a href=" https://younga298.github.io/-2024-kimyounga_portfolio/" target="_blank"
                   class="project__link">보러가기</a>
               </div>
@@ -200,13 +215,12 @@
           </ul>
         </div>
       </div>
-
-      <!--세번째 리스트-->
+      <!--BEATTITUDE-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font"></h1>
           <div class="project__info">
-            <p class="project__number">project#3</p>
+            <p class="project__number">project#5</p>
             <p class="project__type">react 사이트</p>
             <p class="project__separator"></p>
             <p class="project__name">BEATTITUDE</p>
@@ -216,8 +230,8 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__2.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__2.png" alt="BEATTITUDE 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -229,18 +243,16 @@
                   <b>REDUX</b>를 이용하여 상품을 장바구니로 가져왔습니다.
                   이번 작업은 <b>REACT의 COMPONENT 와 AJAX</b>의 특징을 이해하고 최대한 활용하려고 노력하였습니다.
                 </p>
-
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="2">detail</button>
+                <button class="project__button" data-target="05">detail</button>
                 <a href="https://younga298.github.io/beattltude/" target="_blank" class="project__link">보러가기</a>
-
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <!--네번째 리스트-->
+      <!--밀리의 서재-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font"></h1>
@@ -255,8 +267,8 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__3.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__3.png" alt="밀리의 서재 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -267,22 +279,21 @@
                   유튜브 영상의 경우 <b>유튜브 OPEN API</b>를 통해 영상을 가져와 재생효과를 주었습니다. 이번 작업은 밀리페이지와 최대한 비슷한 디자인과 효과들을 구현하려고
                   노력하였습니다.
                 </p>
-
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="3">detail</button>
+                <button class="project__button" data-target="04">detail</button>
                 <a href=" https://younga298.github.io/project-4/" target="_blank" class="project__link">보러가기</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <!--다섯번째 리스트-->
+      <!--연똑이-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font"></h1>
           <div class="project__info">
-            <p class="project__number">project#5</p>
+            <p class="project__number">project#3</p>
             <p class="project__type">팀 협동 사이트</p>
             <p class="project__separator"></p>
             <p class="project__name">연똑이</p>
@@ -292,8 +303,8 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__4.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__4.png" alt="연똑이 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -304,10 +315,9 @@
                   효과는 <b>JQUERY와 CSS 라이브러리</b>로 주었습니다. 이번 작업은 팀 프로젝트이니 만큼 다른 팀원들과의 협업과, 다른 팀원들의 작업물 사이의 조화를 염두에 두고
                   작업하였습니다.
                 </p>
-
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="4">detail</button>
+                <button class="project__button" data-target="03">detail</button>
                 <a href="https://0limmmmmm0.github.io/project3/sub1/menu.html" target="_blank"
                   class="project__link">보러가기</a>
               </div>
@@ -315,13 +325,12 @@
           </ul>
         </div>
       </div>
-      <!--여섯번째 리스트-->
+      <!--GHIBLI 스튜디오-->
       <div class="project">
-
         <div class="project__header">
           <h1 class="point-font"></h1>
           <div class="project__info">
-            <p class="project__number">project#6</p>
+            <p class="project__number">project#2</p>
             <p class="project__type">반응형 사이트</p>
             <p class="project__separator"></p>
             <p class="project__name">GHIBLI 스튜디오</p>
@@ -331,8 +340,8 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__5.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__5.png" alt="GHIBLI 스튜디오 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -344,7 +353,7 @@
                 </p>
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="5">Detail</button>
+                <button class="project__button" data-target="02">Detail</button>
                 <a href="https://younga298.github.io/project-6/index.html" target="_blank"
                   class="project__link">보러가기</a>
               </div>
@@ -352,12 +361,12 @@
           </ul>
         </div>
       </div>
-      <!--일곱번째 리스트-->
+      <!--The Ceramics-->
       <div class="project">
         <div class="project__header">
           <h1 class="point-font"></h1>
           <div class="project__info">
-            <p class="project__number">project#7</p>
+            <p class="project__number">project#1</p>
             <p class="project__type">웹 표준 사이트</p>
             <p class="project__separator"></p>
             <p class="project__name">The Ceramics</p>
@@ -367,8 +376,8 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt="pcimg"></div>
-                <div class="project__image--screenshot"><img src="img/project__6.png" alt="prjimg"></div>
+                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
+                <div class="project__image--screenshot"><img src="img/project__6.png" alt="The Ceramics 웹사이트 이미지"></div>
               </div>
             </li>
             <li class="project__item project__item--details">
@@ -381,7 +390,7 @@
                 </p>
               </div>
               <div class="project__actions">
-                <button class="project__button" data-target="6">Detail</button>
+                <button class="project__button" data-target="01">Detail</button>
                 <a href="https://younga298.github.io/project-7/" target="_blank" class="project__link">보러가기</a>
               </div>
             </li>
@@ -390,55 +399,87 @@
       </div>
     </div>
   </section>
-
-  <!---->
-  <!--프로젝트 detail / 보러가기 버튼 영역-->
-  <div class="popup" id="popup01">
+  <!--detail / 보러가기 버튼 영역-->
+  <!-- 소주한국학교 팝업 -->
+    <div class="popup" id="popup08">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg01-1.png" alt="project_img"></div>
-
+            <div class="popup__slide swiper-slide"><img src="img/popupimg8-1.png" alt="소주한국학교팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg8-2.png" alt="소주한국학교팝업이미지2"></div>
           </div>
-
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
-
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">반응형 페이지</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
+        <div class="popup__details-info">
+          <h3>project</h3>
+          <p>2025.06.20 ~ 06.24</p>
+          <p>제작인원 :1명</p>
+          <p>기여도 100%</p>
+        </div>
+        <div class="popup__details-skills">
+          <h3>SKILL</h3>
+          <span>HTML, CSS, jQuery, Js</span>
+        </div>
+        <div class="popup__colors">
+          <span class="popup__color popup__color--primary"></span>
+          <span class="popup__color popup__color--secondary"></span>
+        </div>
+        <div class="popup__procedure">
+          <h3 class="popup__procedure-title">project PROCEDURE</h3>
+          <p class="popup__procedure-description">
+            메뉴 구조는 CSS와 JS를 적절히 분리해 구현했습니다. hover·focus로 처리 가능한 영역은 CSS로, 포커스가 벗어나도 유지되어야 하는 경우는 JS로 classList.toggle()을 활용해 제어했습니다. 서브페이지의 메뉴 토글 기능은 클릭 이벤트 충돌을 방지했고, 서브메뉴가 있는 항목 클릭 시에만 메뉴가 열리고 닫히도록 설정했고, 내부 항목(서브메뉴 항목)을 클릭했을 때는 메뉴 토글이 되지 않도록 return 처리를 넣어 이벤트를 정교하게 분리했습니다. Swiper는 breakpoints로 반응형 슬라이드 수를 조절하고, resize 이벤트에 swiper.update()를 적용해 실시간 반영되도록 했습니다. 페이지네이션 위치 문제는 Swiper 기본 스타일을 확인해 position: static으로 재정의해 깔끔하게 정렬했습니다. 레이아웃 전반에는 min-height, rem 단위를 활용해 폰트와 여백이 디바이스 해상도에 따라 자연스럽게 조정되도록 했습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 삼양라운드 팝업 -->
+  <div class="popup" id="popup07">
+    <div class="popup__close">
+      <i class="popup__icon fa-solid fa-xmark"></i>
+    </div>
+    <div class="popup__content">
+      <div class="popup__slides">
+        <div class="popup__swiper swiper mySwiper">
+          <div class="popup__swiper-wrapper swiper-wrapper">
+            <div class="popup__slide swiper-slide"><img src="img/popupimg01-1.png" alt="삼양라운드 팝업이미지"></div>
+          </div>
+          <div class="popup__swiper-button-next swiper-button-next"></div>
+          <div class="popup__swiper-button-prev swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="popup__details">
+        <h2 class="popup__title">반응형 페이지</h2>
+        <div class="popup__colors">
+          <span class="popup__color popup__color--primary"></span>
+          <span class="popup__color popup__color--secondary"></span>
+        </div>
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.12.20 ~ 12.25</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>HTML, CSS, jQuery, Js</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
@@ -453,40 +494,29 @@
             헤더는 scroll 이벤트와 if-else 문을 활용하여 동작하도록 구현했습니다. 마지막 스크롤 위치와 현재 스크롤 위치를 각각 변수에 저장하고, 스크롤을 내릴 때는 헤더를 숨기고, 스크롤을
             올릴 때는 헤더가 다시
             나타나도록 설정했습니다.
-
-
           </p>
         </div>
-
-
       </div>
     </div>
   </div>
-
-  <div class="popup" id="popup1">
+  <!-- 국비 교육 포트폴리오 팝업 -->
+  <div class="popup" id="popup06">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg1-1.png" alt="project_img"><img
-                src="img/popupimg1-2.png" alt="project_img"></div>
-            <div class="popup__slide swiper-slide"><img src="img/popupimg1-3.png" alt="project_img"><img
-                src="img/popupimg1-4.png" alt="project_img"></div>
-
+            <div class="popup__slide swiper-slide"><img src="img/popupimg1-1.png" alt="국비 교육 포트폴리오 팝업1"><img
+                src="img/popupimg1-2.png" alt="국비 교육 포트폴리오 팝업1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg1-3.png" alt="국비 교육 포트폴리오 팝업2"><img
+                src="img/popupimg1-4.png" alt="국비 교육 포트폴리오 팝업2"></div>
           </div>
-
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
-
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">국비교육 포트폴리오</h2>
 
@@ -530,56 +560,44 @@
       </div>
     </div>
   </div>
-
-  <div class="popup" id="popup2">
-
+  <!-- BEATTITUDE 팝업 -->
+  <div class="popup" id="popup05">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-1.png" alt="project_img"></div>
-            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-2.png" alt="project_img"></div>
-            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-3.png" alt="project_img"><img
-                src="img/popupimg2-4.png" alt="project_img"></div>
-
-
+            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-1.png" alt="BEATTITUDE 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-2.png" alt="BEATTITUDE 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"> <img src="img/popupimg2-3.png" alt="BEATTITUDE 팝업이미지2"><img
+                src="img/popupimg2-4.png" alt="BEATTITUDE 팝업이미지2"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">React 편집샵 페이지</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.04.04~04.19</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>React,Redux,Bootstrap,HTML,CSS,jQuery,Js</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
@@ -595,63 +613,47 @@
             해결하기 위해 검색 후 다시 코드를 짜고를 무수히 반복했습니다. Js의 이해심이
             부족하여 제가 원하는 만큼의 작업물이 안 나왔고 이번 제작을 기회로 React 경험과
             Js의 공부 중요성을 다시 한번 배웠습니다.
-
           </p>
         </div>
-
-
       </div>
     </div>
-
-
   </div>
-
-  <div class="popup" id="popup3">
+  <!-- 밀리의 서재 팝업 -->
+  <div class="popup" id="popup04">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg3-1.png" alt="project_img"></div>
-            <div class="popup__slide swiper-slide"><img src="img/popupimg3-2.png" alt="project_img"></div>
-
-
+            <div class="popup__slide swiper-slide"><img src="img/popupimg3-1.png" alt="밀리의 서재 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg3-2.png" alt="밀리의 서재 팝업이미지2"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">OPEN API 도서 웹사이트</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.03.13~03.26</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>open Api,Ajax,Json,HTML,SCSS,jQuery,Js</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
@@ -662,61 +664,46 @@
             책의 썸네일, 제목, 저자 정보를 받아와서 화면에 보여줄 수 있도록 했습니다.
             반복적인 작업을 위해 for 문을 사용하여 배열의 각 요소에 대해 API 요청을 보내어
             데이터를 화면에 보여지게 구현했습니다.
-
           </p>
         </div>
-
-
       </div>
     </div>
-
-
   </div>
-
-  <div class="popup" id="popup4">
-
+  <!-- 연똑이 팝업 -->
+  <div class="popup" id="popup03">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg4.png" alt="project_img" class="slide"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg4.png" alt="연똑이 팝업이미지1" class="slide"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">여행 소개 사이트</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.03.04~03.15</p>
           <p>제작인원 :4명</p>
           <p>기여도 25%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>HTML,CSS,jQuery,Js</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
@@ -729,61 +716,46 @@
             팀원들과의 적극적인 소통과 회의를 통한 조율을 하며 협업을 배울수 있는 기회을 얻게되었었습니다.
           </p>
         </div>
-
-
       </div>
     </div>
-
-
   </div>
-
-  <div class="popup" id="popup5">
-
+  <!--GHIBLI 스튜디오 팝업-->
+  <div class="popup" id="popup02">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg5-1.png" alt="project_img" class="slide"></div>
-            <div class="popup__slide swiper-slide"><img src="img/popupimg5-2.png" alt="project_img" class="slide">
+            <div class="popup__slide swiper-slide"><img src="img/popupimg5-1.png" alt="GHIBLI 스튜디오 팝업이미지1" class="slide"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg5-2.png" alt="GHIBLI 스튜디오 팝업이미지2" class="slide">
             </div>
-
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
         </div>
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">지브리 사이트</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.02.02~02.20</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>HTML,CSS,jQuery,Js</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
@@ -796,86 +768,57 @@
             통해 슬라이드 이동을 부드럽게 처리하며, 화면 크기에 맞게 margin-left로 조정하였습니다.
           </p>
         </div>
-
-
       </div>
     </div>
-
-
   </div>
-
-  <div class="popup" id="popup6">
-
+  <!--The Ceramics 팝업-->
+  <div class="popup" id="popup01">
     <div class="popup__close">
       <i class="popup__icon fa-solid fa-xmark"></i>
     </div>
-
     <div class="popup__content">
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg6-1.png" alt="project_img"></div>
-            <div class="popup__slide swiper-slide"><img src="img/popupimg6-2.png" alt="project_img"></div>
-
-
+            <div class="popup__slide swiper-slide"><img src="img/popupimg6-1.png" alt="The Ceramics 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg6-2.png" alt="The Ceramics 팝업이미지2"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
         </div>
-
-
-
-
-
-
-
-
       </div>
-
-
       <div class="popup__details">
         <h2 class="popup__title">액세서리 사이트</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.01.08~01.23</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>HTML,CSS,jQuery</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
           <p class="popup__procedure-description">
             해당 작업물은 첫 번째 프로젝트로, 소품샵을 주제로 하여 HTML, CSS, jQuery만을
             사용하여 만들었습니다.기초적인 CSS만을 사용하였고 주로 HOVER 효과로 표현하였습니다.
             이번 작업은 처음이니만큼 HTML과 CSS의 기본을 충실히 익히고자 작업하였습니다.
-
-
           </p>
         </div>
-
-
       </div>
     </div>
-
-
   </div>
-
+  <!-- 경력/기술 섹션 -->
   <section id="resume">
     <div class="resume__container">
       <h1 class="resume__title point_font">RESUME</h1>
@@ -948,8 +891,7 @@
       </div>
     </div>
   </section>
-
-
+ <!--마지막 섹션-->
   <section id="contact">
     <div class="contact__container">
       <h2 class="contact__title point_font">CONTACT</h2>
@@ -971,14 +913,12 @@
       </div>
     </div>
   </section>
-
   <!-- 스크립트 -->
   <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/Jquery.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/header.js"></script>
 </body>
 
 </html>

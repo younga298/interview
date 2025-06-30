@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         lastScrollY = currentScrollY;
+        console.log(window.scrollY);
     });
 });
 

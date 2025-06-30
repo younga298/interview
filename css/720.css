@@ -1,10 +1,9 @@
 @media all and (max-width:720px) {
 
-  .header__nav {
+.header__nav {
     position: fixed;
-    opacity: 0;
-    top: 0;
-    left: -100%;
+    top: 60px;
+    left: 0%;
     list-style: none;
     z-index: 1000;
     height: 100vh;
@@ -12,54 +11,88 @@
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
-  .header__nav.active {
-    opacity: 1;
-    transform: translateX(0);
-    position: fixed;
-    top: 100%;
-    width: 80%;
-    left: 0;
-    background-color: #92b4ec;
-    height: 100vh;
-
-  }
-
-  .header__nav-list {
+    .header__nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
-    padding: 105px 60px 160px 21px;
+    justify-content: center;
+    gap: 50px;
+    background: #92B4EC;
+    width: 320px;
+    padding: 0px 30px 50px;
 
     a {
-      margin-left: 20px;
       font-size: 40px;
     }
   }
 
 
-
-  .header__three-col {
-    display: block;
+  
+input[id=trigger]:checked ~  nav.header__nav {
+    transform: translateX(0);
+    left:0
   }
 
-  .header__hamburger {
-    position: relative;
-  }
 
-  .header__hamburger.active .header__line:nth-child(1) {
-    transform: rotate(45deg);
-    top: 8px;
-  }
+/* 체크박스 */
 
-  .header__hamburger.active .header__line:nth-child(2) {
-    opacity: 0;
-  }
+.header__three-col {
+  display: block;
+}
 
-  .header__hamburger.active .header__line:nth-child(3) {
-    transform: rotate(-45deg);
-    top: -8px;
-  }
+input[id=trigger] {
+display: none; 
+}
+
+label[for=trigger] {
+  display: block;
+  width: 25px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+label[for=trigger] span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #FFD24C;
+  transition: 0.3s;
+}
+
+label[for=trigger] span:nth-child(1) {
+  top: 0;
+}
+
+label[for=trigger] span:nth-child(2) {
+  top: 50%;
+}
+
+label[for=trigger] span:nth-child(3) {
+  top: 100%;
+}
+
+/* 체크박스 선택 시 */
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(2) {
+  display: none;
+}
+
+input[id=trigger]:checked + label[for=trigger] span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+
 
   .home__text-parent {
     font-size: 60px;

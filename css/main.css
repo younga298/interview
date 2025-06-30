@@ -43,59 +43,28 @@ li {
 }
 
 
-
-
-.header__three-col {
-    width: 60px;
-    background-color: transparent;
-    box-sizing: border-box;
+input[id=trigger] {
     display: none;
 }
 
+:root {
+    --bg-color: white;
 
-
-
-
-.header__hamburger .header__line {
-    width: 20px;
-    height: 2px;
-    background-color: #FFD24C;
-    display: block;
-    margin: 6px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
 }
-
-.header__hamburger:hover {
-    cursor: pointer;
-}
-
-
-#hamburger-1.is-active .header__line:nth-child(2) {
-    opacity: 0;
-}
-
-#hamburger-1.is-active .header__line:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
-}
-
-#hamburger-1.is-active .header__line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-}
-
 
 header {
     width: 100vw;
     height: 60px;
     display: flex;
     position: fixed;
-    background-color: white;
+    background-color: var(--bg-color);
     z-index: 1000;
     transition: opacity 0.5s ease, transform 0.5s ease;
     opacity: 1;
     transform: translateY(0);
+    align-items: center;
+    padding: 0 25px;
     justify-content: space-between;
-    padding: 16px;
 
     a {
         color: #FFD24C;
@@ -111,20 +80,19 @@ header.hidden {
 
 
 
-
-
 .header__nav-list {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-left: 20px;
+}
+
+.header__nav {
+    width: 100%;
 }
 
 .header__menu-link {
     font-family: 'Caveat Brush';
     font-size: 1.563rem;
     letter-spacing: -0.02em;
-    margin-right: 35px;
+    margin-right: 55px;
     transition: all 0.3s;
 }
 
@@ -135,9 +103,7 @@ header.hidden {
     font-weight: 900;
     text-align: center;
     color: #4B6587;
-    line-height: 44px;
-    margin-top: -8px;
-
+    line-height: 49px;
 }
 
 
@@ -145,7 +111,7 @@ header.hidden {
     color: #fff;
     background-color: #4B6587;
     transition: all 0.5s;
-    line-height: 40px;
+    line-height: 49px;
 }
 
 

@@ -1,6 +1,6 @@
 
 
-$(document).ready(function () {
+$(function () {
   $('.project__button').on('click', function (e) {
     e.preventDefault();
     var targetId = $(this).data('target');
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-$(document).ready(function () {
+$(function () {
   const $profileBox = $('.profile__box');
   const $profileLeft = $('.profile__intro');
   const $profileRight = $('.profile__skills');
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+$(function () {
   const $resumeBox = $('.resume__container');
   const $resLeft = $('.resume__details');
   const $resRight = $('.resume__skills');
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
+$(function () {
   var $titleWorkPro = $('.project__header');
   var $projectListBoxes = $('.project__content');
   var animationOffset = 100;
