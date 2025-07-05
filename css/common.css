@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+body.no-scroll {
+  overflow-y: hidden;
+  padding-right: 17px; /* 스크롤바 사라지는 만큼 여백 보정 */
+}
+
+/* visible 상태값 */
+.visible {
+  opacity: 1 !important;
+  transform: translate(0,0) !important;
+  transition: all 0.6s ease-out;
+}
+
+/* 기본 fade-in 애니메이션 초기 상태 */
+.fade-in-left,.fade-in-right,.fade-in-up ,.fade-in-left-up {
+   transition: all 0.6s ease-out;
+}
+
+.fade-in-left {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.fade-in-right {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.fade-in-up {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.fade-in-left-up {
+  transform: translate(-50px, 50px);
+  opacity: 0;
+}
+
+/* 공통 폰트 스타일 */
+.point_font {
+  font-family: "Caveat Brush";
+  width: 100%;
+  font-size: 4.25rem;
+  letter-spacing: -0.02em;
+  color: var(--blue-100);
+}
+
+.highlight {
+  font-weight: bold;
+  background-color: var(--yellow-200);
+  padding: 0 7px;
+  color: var(--blue-500);
+}
+
+/* 메뉴 인풋 */
+input[id="trigger"] {
+  display: none;
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-100);
+
+  border-radius: 10px;
+
+  border: 3px solid var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-500);
+}

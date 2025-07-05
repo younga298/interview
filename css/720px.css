@@ -1,0 +1,116 @@
+@media all and (max-width: 720px) {
+  .header__nav {
+    position: fixed;
+    top: 62px;
+    left: 0%;
+    list-style: none;
+    z-index: 1000;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+    /*.header__nav 보이기 */
+    input[id="trigger"]:checked ~ nav.header__nav {
+      transform: translateX(0);
+      left: 0;
+    }
+
+  .header__nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 3.125rem;
+    background: #92b4ec;
+    width: 360px;
+    padding: 6rem 1.875rem 3.125rem;
+    a {
+      font-size: 2.5rem;
+    }
+  }
+  
+ /* 프로필 섹션 */
+  .profile__intro,
+  .profile__skills-box {
+    flex: 1 1 100%;
+  }
+
+  .profile__intro {
+    align-items: center;
+  }
+
+  .profile__intro-text {
+    max-width: 445px;
+  }
+
+  .profile__details {
+    gap: 3rem;
+  }
+
+/* work 섹션 */
+
+.text-hidden {
+  display: none;
+}
+
+.project__header {
+  justify-content: flex-end;
+}
+
+/* 팝업 섹션 */
+.popup__procedure-description {
+  padding-right: 0;
+}
+
+  /* 햄버거 메뉴 */
+  .header__three-col {
+    display: block;
+  }
+
+  label[for="trigger"] {
+    display: block;
+    width: 25px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  label[for="trigger"] span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #ffd24c;
+    transition: 0.3s;
+  }
+
+  label[for="trigger"] span:nth-child(1) {
+    top: 0;
+  }
+
+  label[for="trigger"] span:nth-child(2) {
+    top: 50%;
+  }
+
+  label[for="trigger"] span:nth-child(3) {
+    top: 100%;
+  }
+
+  /* 햄버거 메뉴 선택 시 */
+
+  input[id="trigger"]:checked + label[for="trigger"] span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  input[id="trigger"]:checked + label[for="trigger"] span:nth-child(2) {
+    display: none;
+  }
+
+  input[id="trigger"]:checked + label[for="trigger"] span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,57 @@
+@media all and (max-width: 575px) {
+  /* 프로필 섹션 */
+  .profile__skills-box > li {
+    padding: 0;
+  }
+
+  .profile__skills-box-icon.fa-circle-check:before {
+    display: none;
+  }
+
+  .profile__skills-box-details {
+    margin-left: 0;
+  }
+
+  .project__preview img {
+    min-width: 260px;
+  }
+
+  /* work 섹션 */
+  .project__description--text {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .project__description--title {
+    font-size: 1.12rem;
+  }
+
+  .project__item {
+    justify-content: center !important;
+  }
+  .project__items {
+    padding: 5rem 2rem 4rem 2rem;
+  }
+
+  /* 팝업 섹션 */
+  .popup__procedure-description p {
+   font-size: 0.9rem;
+  }
+
+  /* CONTACT 섹션 */
+
+  .contact__message span {
+    font-size: 1.7rem;
+  }
+
+  .contact__title {
+    font-size: 3.5rem;
+  }
+
+  .contact__message {
+    margin: 7.75rem auto 0;
+  }
+  
+  .timeline {
+    display: none;
+  }
+}

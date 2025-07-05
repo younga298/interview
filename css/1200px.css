@@ -1,0 +1,9 @@
+@media (max-width:1200px) {
+.profile__intro-text {
+  margin-top: 3.2rem;
+}
+/* 팝업 섹션 */
+.popup__procedure-description {
+  padding-right: 0;
+}
+}

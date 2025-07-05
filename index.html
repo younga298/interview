@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kim Young Ah_PORTFOLIO</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/1019~1279.css">
-  <link rel="stylesheet" href="css/720~1019.css">
-  <link rel="stylesheet" href="css/720.css">
-  <link rel="stylesheet" href="css/390~500.css">
+  <link rel="stylesheet" href="css/1200px.css">
+  <link rel="stylesheet" href="css/991px.css">
+  <link rel="stylesheet" href="css/720px.css">
+  <link rel="stylesheet" href="css/575px.css">
+  <link rel="stylesheet" href="css/440px.css">
+  <link rel="stylesheet" href="css/390px.css">
 
 
   <!--폰트 링크-->
@@ -63,17 +67,17 @@
   <!-- 프로필 컨텐츠 -->
   <section id="profile">
     <div class="profile__box">
-      <h1 class="point_font">profile</h1>
+      <h1 class="point_font font_Cus">profile</h1>
       <div class="profile__details">
-        <div class="profile__intro">
+        <div class="profile__intro fade-in-left">
           <div class="profile__intro-image"><img src="img/somi.jpg" alt="profile_img"></div>
           <p class="profile__intro-text">
-            안녕하세요!<br>
+            안녕하세요!
             배움을 멈추지 않고 새로운 지식을 추구하는
-            <br>웹 퍼블리셔 김영아입니다.
+            웹 퍼블리셔 김영아입니다.
           </p>
         </div>
-        <div class="profile__skills">
+        <div class="profile__skills fade-in-right">
           <ul class="profile__skills-box">
             <li>
               <div class="profile__skills-box-text">
@@ -115,8 +119,8 @@
     <div class="projects__list">
       <!--소주한국학교-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font">work</h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#8</p>
             <p class="project__type">반응형 사이트</p>
@@ -124,24 +128,24 @@
             <p class="project__name">소주한국학교</p>
           </div>
         </div>
-        <div class="project__content">
+        <div class="project__content fade-in-up">
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__08.png" alt="소주한국학교 웹사이트 이미지"></div>
+                <img src="img/project__08.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">소주한국학교</h3>
+                <h3 class="project__description--title">유지보수를 고려한 CSS 구조</h3>
                 <p class="project__description--text">
-                해당 프로젝트는 PC에선 드롭다운, 모바일에선 햄버거 메뉴를 적용한 반응형 웹사이트입니다. Swiper.js로 메인 배너와 앨범에 자동 슬라이드를 구현했고, 미디어 쿼리로 해상도별 레이아웃을 유연하게 조정했습니다. 색상 변수와 유틸리티 클래스, 시맨틱 태그 등을 활용해 유지보수성과 접근성을 고려했습니다.
+                  <span class="highlight">PC에선 드롭다운, 모바일에선 햄버거 메뉴를 적용</span>한 반응형 웹사이트입니다.
+                 Swiper.js로 메인 배너와 앨범에 <span class="highlight">자동 슬라이드를 구현</span>했고, 미디어 쿼리로 해상도별 <span class="highlight">레이아웃을 유연하게 조정</span>했습니다. <span class="highlight">색상 변수와 유틸리티 클래스, 시맨틱 태그 등을 활용해 유지보수성과 접근성</span>을 고려했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="08">detail</button>
-                <a href="https://younga298.github.io/school-site/" target="_blank" class="project__link">보러가기</a>
+                <a href="https://younga298.github.io/school-site/" target="_blank"  class="project__site_button" >보러가기</a>
               </div>
             </li>
           </ul>
@@ -149,8 +153,8 @@
       </div>
       <!--삼양라운드-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font">work</h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#7</p>
             <p class="project__type">반응형 사이트</p>
@@ -162,21 +166,22 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__01.png" alt="삼양라운드 웹사이트 이미지"></div>
+              <img src="img/project__07.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">삼양라운드</h3>
-                <p class="project__description--text">삼양라운드 홈페이지를 클론코딩한 페이지 입니다. <b>반응형쿼리</b>와
-                  <b>리사이즈 이벤트</b>를 사용하여 웹사이즈 마다 적용되야 하는 css기능들이 중복되지 않게 하며 실시간으로 크기에 따라 레이아웃이 변하는 반응형 웹 제작에 중점을 두고
-                  작업하였습니다.레이아웃은 px보다는 %와같은 상대단위를 사용하여 다양한 화면크기에서 유연하게 대응하도록 작업했습니다.
+                <h3 class="project__description--title">사용자 경험을 고려한 유연한 레이아웃 구성</h3>
+                <p class="project__description--text">
+                  <span class="highlight">Grid 와 Flexbox</span>를 조합해 콘텐츠 흐름을 정돈하고,
+                  <span class="highlight">vw 단위를 활용해 모든 요소가 화면 크기에 따라 자연스럽게 조정</span>되도록 설계했습니다.
+                  <span class="highlight">PC와 모바일 환경에 맞춰 메뉴 동작 방식을 분리</span>하고,
+                  브라우저 크기 변화에도 안정적으로 작동하도록 이벤트를 제어했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="07">detail</button>
-                <a href="https://younga298.github.io/project1/" target="_blank" class="project__link">보러가기</a>
+                <a href="https://younga298.github.io/project1/" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -184,8 +189,8 @@
       </div>
       <!--국비 교육 포트폴리오-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#6</p>
             <p class="project__type">2024 PORTFOLIO</p>
@@ -197,19 +202,20 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__1.png" alt="국비 교육 포트폴리오 이미지"></div>
+              <img src="img/project__06.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">국비 교육 포트폴리오</h3>
-                <p class="project__description--text">6개월간의 교육과정을 통해 제작된 웹사이트를 소개하는 첫번째 포트폴리오 입니다.</p>
+                <h3 class="project__description--title">픽셀 감성과 인터랙션의 조화</h3>
+                <p class="project__description--text">
+                  <span class="highlight">스크롤에 따라 콘텐츠가 가로로 이동</span>하고, 마우스 hover 시 폴더 이미지와 텍스트 컬러가 바뀌는 등 시각적 피드백을 적극 활용해 몰입도를 높였습니다.
+                  <span class="highlight">SCSS의 변수와 믹스를 활용해 전체 스타일의 일관성과 확장성을 유지</span>하며, 디자인과 기능의 균형을 고려해 구성했습니다.
+                </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="06">detail</button>
-                <a href=" https://younga298.github.io/-2024-kimyounga_portfolio/" target="_blank"
-                  class="project__link">보러가기</a>
+                <a href=" https://younga298.github.io/-2024-kimyounga_portfolio/" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -217,8 +223,8 @@
       </div>
       <!--BEATTITUDE-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#5</p>
             <p class="project__type">react 사이트</p>
@@ -230,23 +236,19 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__2.png" alt="BEATTITUDE 웹사이트 이미지"></div>
+                <img src="img/project__05.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">BEATTITUDE</h3>
-                <p class="project__description--text">편집샵 쇼핑물을 주제로 <b>REACT</b>를 이용하여 작업하였습니다.
-                  주로 <b>REACT BOOTSTRAP 과 SWIPER SLIDER</b>를 이용하여 구조를 잡았습니다.
-                  상품정보와 레이아웃은 기존 사이트와 거의 동일하게 작업했으며,
-                  <b>REDUX</b>를 이용하여 상품을 장바구니로 가져왔습니다.
-                  이번 작업은 <b>REACT의 COMPONENT 와 AJAX</b>의 특징을 이해하고 최대한 활용하려고 노력하였습니다.
+                <h3 class="project__description--title">React 컴포넌트 기반 쇼핑몰 UI</h3>
+                <p class="project__description--text">
+                  <span class="highlight">React‑Bootstrap</span>과 <span class="highlight">Swiper Slider</span>로 재사용 가능한 컴포넌트를 설계하고, fetch/axios로 불러온 상품 데이터를 <span class="highlight">Redux</span>로 전역 관리해 <span class="highlight">장바구니 기능</span>을 구현하며 <span class="highlight">React Router</span>로 SPA 내비게이션을 처리하고 CRA 기반으로 빌드부터 배포까지 완료했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="05">detail</button>
-                <a href="https://younga298.github.io/beattltude/" target="_blank" class="project__link">보러가기</a>
+                <a href="https://younga298.github.io/beattltude/" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -254,8 +256,8 @@
       </div>
       <!--밀리의 서재-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#4</p>
             <p class="project__type">Open API 사이트</p>
@@ -267,22 +269,21 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__3.png" alt="밀리의 서재 웹사이트 이미지"></div>
+              <img src="img/project__04.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">밀리의 서재</h3>
-                <p class="project__description--text">온라인 서점을 주제로 <b>HTML,CSS</b>를 이용하여 작업하였습니다.
-                  도서정보는 <b>카카오 OPEN API</b>를 통해 가져왔고, 효과는 <b>JQUERY로 주었습니다.</b>
-                  유튜브 영상의 경우 <b>유튜브 OPEN API</b>를 통해 영상을 가져와 재생효과를 주었습니다. 이번 작업은 밀리페이지와 최대한 비슷한 디자인과 효과들을 구현하려고
-                  노력하였습니다.
+                <h3 class="project__description--title">API 연동과 인터랙션 구현</h3>
+                <p class="project__description--text">
+                  책 제목을 배열에 담아 <span class="highlight">카카오 도서 API로 정보를 받아오고,</span>  <span class="highlight">썸네일·제목·저자 데이터</span>를 각 리스트 항목에 정확히 출력했습니다.
+                  탭과 버튼에 클릭 이벤트를 적용해 선택한 항목만 보이도록 구성하고, <span class="highlight">‘더보기’ 클릭 시 콘텐츠가 자연스럽게 펼쳐지는 애니메이션 효과</span>도 구현했습니다.
+                  또한 <span class="highlight">스크롤 시 섹션 요소들이 부드럽게 등장하도록 트랜지션 효과</span>를 적용했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="04">detail</button>
-                <a href=" https://younga298.github.io/project-4/" target="_blank" class="project__link">보러가기</a>
+                <a href=" https://younga298.github.io/project-4/" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -290,8 +291,8 @@
       </div>
       <!--연똑이-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#3</p>
             <p class="project__type">팀 협동 사이트</p>
@@ -303,23 +304,21 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__4.png" alt="연똑이 웹사이트 이미지"></div>
+              <img src="img/project__03.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">연똑이</h3>
-                <p class="project__description--text">일본여행 소개를 주제로<b>HTML,CSS</b>를 이용하여 작업하였습니다.
-                  서브페이지의 슬라이더 부분과 반응형, 팝업창설정을 작업하였습니다.
-                  효과는 <b>JQUERY와 CSS 라이브러리</b>로 주었습니다. 이번 작업은 팀 프로젝트이니 만큼 다른 팀원들과의 협업과, 다른 팀원들의 작업물 사이의 조화를 염두에 두고
-                  작업하였습니다.
+                <h3 class="project__description--title">함께 만든, 더 나은 사용자 경험</h3>
+                <p class="project__description--text">
+                  팀 프로젝트로 일본 각 지역 행사 소개 서브페이지 작업을 맡아 <span class="highlight">반응형 레이아웃과 슬라이더, 팝업 모달</span>을 구현했습니다.
+                  첫 번째 슬라이더와 두 번째 슬라이더는 <span class="highlight">각각 재생 시간을 다르게 설정하여</span> 사용자가 콘텐츠를 자연스럽게 볼 수 있도록 했으며, 화면 크기에 따라 보여지는 슬라이드 수를 조절해 <span class="highlight">사용자 경험을 고려</span>했습니다.
+                  또한 여행의 자유로움을 표현하기 위해 종이비행기 모티브를 로고에 적용해 <span class="highlight">브랜드 아이덴티티</span>를 반영했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="03">detail</button>
-                <a href="https://0limmmmmm0.github.io/project3/sub1/menu.html" target="_blank"
-                  class="project__link">보러가기</a>
+                <a href="https://0limmmmmm0.github.io/project3/sub1/menu.html" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -327,8 +326,8 @@
       </div>
       <!--GHIBLI 스튜디오-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#2</p>
             <p class="project__type">반응형 사이트</p>
@@ -340,22 +339,19 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__5.png" alt="GHIBLI 스튜디오 웹사이트 이미지"></div>
+              <img src="img/project__02.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
-                <h3 class="project__description--title">GHIBLI 스튜디오</h3>
-                <p class="project__description--text">지브리스튜디오를 주제로<b>HTML,CSS</b>를 이용하여 <b>반응형</b>으로 작업하였습니다.
-                  지브리스튜디오 작품과 등장인물들에 알아가는 형식으로 제작하였으며,<b>JQUERY</b>를 이용하여 효과를주었습니다.
-                  이번 작업에서는 스크롤 이벤트를 메인으로 작업했습니다.
+                <h3 class="project__description--title">3D 카드와 스크롤 애니메이션</h3>
+                <p class="project__description--text">
+                  <span class="highlight">3D 회전 효과를 적용한 카드 내비게이션</span>, 스크롤 기반 애니메이션으로 인터랙티브한 시각적 요소를 주어 사용자 경험을 고려했습니다. <span class="highlight">prependTo/appendTo</span> 메서드를 활용한 <span class="highlight">무한 슬라이드 기능으로 콘텐츠 간 전환을 부드럽게 구현</span>하고, 다양한 디바이스에서 최적의 사용자 경험을 제공할 수 있도록 반응형 웹 디자인을 최적화했습니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="02">Detail</button>
-                <a href="https://younga298.github.io/project-6/index.html" target="_blank"
-                  class="project__link">보러가기</a>
+                <a href="https://younga298.github.io/project-6/index.html" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -363,8 +359,8 @@
       </div>
       <!--The Ceramics-->
       <div class="project">
-        <div class="project__header">
-          <h1 class="point-font"></h1>
+        <div class="project__header fade-in-left">
+          <h1 class="point-font text-hidden">work</h1>
           <div class="project__info">
             <p class="project__number">project#1</p>
             <p class="project__type">웹 표준 사이트</p>
@@ -376,22 +372,19 @@
           <ul class="project__items">
             <li class="project__item">
               <div class="project__preview">
-                <div class="project__image--desktop"><img src="img/desktop.png" alt=""></div>
-                <div class="project__image--screenshot"><img src="img/project__6.png" alt="The Ceramics 웹사이트 이미지"></div>
+                <img src="img/project__01.png" alt="삼양라운드 웹사이트 이미지">
               </div>
             </li>
             <li class="project__item project__item--details">
               <div class="project__description">
                 <h3 class="project__description--title">The Ceramics</h3>
-                <p class="project__description--text">첫번째 프로젝트로, 소품샵 사이트를 주제로 하여 <b>HTML, CSS, 포토샵/일러스트</b>만을 사용하여
-                  만들었습니다.
-                  기초적인 <b>CSS와 HOVER</b>효과로 표현하였습니다.
-                  이번 작업은 처음이니 만큼, <b>HTML과 CSS</b>의 기본을 충실히 익히고자 하였습니다.
+                <p class="project__description--text">
+                  아기자기한 악세사리 브랜드를 주제로 핀터레스트에서 <span class="highlight">레퍼런스를 찾아가며 전체적인 분위기와 구성을 직접 기획했고,</span>  <span class="highlight">일러스트와 포토샵</span>으로 만든 오브젝트들을 활용해  <span class="highlight">감성적인 느낌의 UI</span> 첫 개인 프로젝트입니다.
                 </p>
               </div>
               <div class="project__actions">
                 <button class="project__button" data-target="01">Detail</button>
-                <a href="https://younga298.github.io/project-7/" target="_blank" class="project__link">보러가기</a>
+                <a href="https://younga298.github.io/project-7/" target="_blank" class="project__site_button">보러가기</a>
               </div>
             </li>
           </ul>
@@ -438,9 +431,26 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            메뉴 구조는 CSS와 JS를 적절히 분리해 구현했습니다. hover·focus로 처리 가능한 영역은 CSS로, 포커스가 벗어나도 유지되어야 하는 경우는 JS로 classList.toggle()을 활용해 제어했습니다. 서브페이지의 메뉴 토글 기능은 클릭 이벤트 충돌을 방지했고, 서브메뉴가 있는 항목 클릭 시에만 메뉴가 열리고 닫히도록 설정했고, 내부 항목(서브메뉴 항목)을 클릭했을 때는 메뉴 토글이 되지 않도록 return 처리를 넣어 이벤트를 정교하게 분리했습니다. Swiper는 breakpoints로 반응형 슬라이드 수를 조절하고, resize 이벤트에 swiper.update()를 적용해 실시간 반영되도록 했습니다. 페이지네이션 위치 문제는 Swiper 기본 스타일을 확인해 position: static으로 재정의해 깔끔하게 정렬했습니다. 레이아웃 전반에는 min-height, rem 단위를 활용해 폰트와 여백이 디바이스 해상도에 따라 자연스럽게 조정되도록 했습니다.
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                메뉴 구조는 CSS와 JS를 적절히 분리해 구현했습니다. hover·focus로 처리 가능한 영역은 CSS로, 포커스가 벗어나도 유지되어야 하는 경우는 JS로 classList.toggle()을 활용해 제어했습니다. 
+              </p>
+            </div>
+              <div class="textwrap"><i class="fa-solid fa-circle-check"></i>
+            <p>서브페이지의 메뉴 토글 기능은 클릭 이벤트 충돌을 방지했고, 서브메뉴가 있는 항목 클릭 시에만 메뉴가 열리고 닫히도록 설정했고, 내부 항목(서브메뉴 항목)을 클릭했을 때는 메뉴 토글이 되지 않도록 return 처리를 넣어 이벤트를 정교하게 분리했습니다.</p>
+          </div>
+              <div class="textwrap"><i class="fa-solid fa-circle-check"></i>
+             <p>Swiper는 breakpoints로 반응형 슬라이드 수를 조절하고, resize 이벤트에 swiper.update()를 적용해 실시간 반영되도록 했습니다.</p>
+            </div>
+               <div class="textwrap"><i class="fa-solid fa-circle-check"></i>
+              <p>페이지네이션 위치 문제는 Swiper 기본 스타일을 확인해 position: static으로 재정의해 깔끔하게 정렬했습니다.</p>
+            </div>
+                <div class="textwrap"><i class="fa-solid fa-circle-check"></i>
+              <p>레이아웃 전반에는 min-height, rem 단위를 활용해 폰트와 여백이 디바이스 해상도에 따라 자연스럽게 조정되도록 했습니다.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -454,7 +464,8 @@
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg01-1.png" alt="삼양라운드 팝업이미지"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg01-1.png" alt="삼양라운드 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg01-2.png" alt="삼양라운드 팝업이미지2"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
@@ -482,19 +493,26 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            프로젝트를 진행하면서 브라우저 창 크기 변경 시 메뉴 상태가 제대로 반영되지 않는 문제가 발생했습니다.
-            if-else 문을 활용해 반응형 쿼리로 jQuery를 구현하여
-            모바일에서는 클릭으로, 데스크탑에서는 마우스 오버로 서브 메뉴가 열리도록 설정했습니다.
-            모바일에서 데스크탑 화면으로 전환할 때 여전히 모바일의 클릭 이벤트가 남아있어 서브 메뉴들을 제대로 볼 수 없는 에러가 발생했고
-            창 크기 변화가 실시간으로 적용되지 않아,
-            새로고침을 해야만 변경 사항이 반영되는 불편함이 있었습니다.
-            그래서 resize 이벤트를 활용하여. 이를 통해 창 크기가 변경될 때마다 관련 클래스를 초기화하고 이벤트를 새롭게 업데이트하도록 설정했습니다.
-            이 접근 방식 으로 화면 크기가 바뀌더라도 메뉴 동작이 일관되게 유지되는 결과를 얻게됬습니다.
-            헤더는 scroll 이벤트와 if-else 문을 활용하여 동작하도록 구현했습니다. 마지막 스크롤 위치와 현재 스크롤 위치를 각각 변수에 저장하고, 스크롤을 내릴 때는 헤더를 숨기고, 스크롤을
-            올릴 때는 헤더가 다시
-            나타나도록 설정했습니다.
-          </p>
+          <div class="popup__procedure-description">
+          <div class="textwrap">
+          <i class="fa-solid fa-circle-check"></i>
+          <p> Grid와 Flexbox를 병행해 전체 레이아웃을 유연하게 설계하고, 주요 콘텐츠는 4열 그리드로 균일하게 배치했습니다.</p>
+        </div>
+        <div class="textwrap">
+        <i class="fa-solid fa-circle-check"></i>
+          <p> vw 단위를 적극 사용하여 도형, 이미지, 텍스트가 화면 크기에 따라 자연스럽게 크기와 위치를 유지하도록 설계했습니다.</p>
+        </div>
+          <div class="textwrap"><i class="fa-solid fa-circle-check"></i><p> 썸네일은 flex: 0 0 calc(100% / 3.5) 와 max-width를 함께 사용해 해상도에 따라 5개 → 3.5개로 유동적 표시가 가능하도록 구성했습니다.</p>
+          </div>
+          <div class="textwrap"><i class="fa-solid fa-circle-check"></i><p> 텍스트는 min-width: fit-content, text-overflow: ellipsis, -webkit-line-clamp 등으로 가독성과 레이아웃 안정성을 유지했습니다.</p>
+          </div>
+          <div class="textwrap"><i class="fa-solid fa-circle-check"></i><p> 반응형 메뉴는 PC에선 hover, 모바일에선 click으로 구분 처리했으며, 창 크기 변화에 따라 이벤트를 초기화하고 재바인딩하여 오류 없이 작동합니다.</p>
+          </div>
+          <div class="textwrap"><i class="fa-solid fa-circle-check"></i><p> .off()를 활용해 이벤트 충돌을 방지하고, 모바일 메뉴 UX도 뒤로가기 흐름까지 고려해 직관적으로 개선했습니다.</p>
+          </div>
+          <div class="textwrap"><i class="fa-solid fa-circle-check"></i><p> 전체적으로 디바이스에 따라 구조와 동작이 유기적으로 변하는 점에 중점을 두고 설계한 프로젝트입니다.</p>
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -519,44 +537,45 @@
       </div>
       <div class="popup__details">
         <h2 class="popup__title">국비교육 포트폴리오</h2>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__details-info">
           <h3>project</h3>
           <p>2024.05.01~05.07</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
-
         <div class="popup__details-skills">
           <h3>SKILL</h3>
           <span>HTML, CSS, jQuery, Js, Illustrator, photoshop</span>
         </div>
-
         <div class="popup__colors">
           <span class="popup__color popup__color--primary"></span>
           <span class="popup__color popup__color--secondary"></span>
         </div>
-
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 국가훈련을 받으며 처음으로 제작된 페이지입니다.
-            취업을 위해 제작된 포트폴리오 페이지입니다. 주로 HTML,CSS를 사용하여
-            배치를 잡았습니다. scroll 이벤트를 사용해서 lists 요소를 좌우로 이동하게 구현했습니다.
-            폴더 부분은 배열에 각각 호버,비호버 됐을시 적용될 이미지경로를 추가하고
-            this와 find를 활용해 현재 호버된 요소의 부모 인덱스를 기준으로 배열의 값을 가져와 해당 이미지가 보여지게 했습니다.
-            처음 제작하는 포토폴리오이다 보니 어떤 느낌으로 제작할지 고민하다 웹퍼블리셔라는 직종을 반영하여,
-            웹페이지나 컴퓨터 환경을 연상시키는 디자인 컨셉으로 작업했습니다.
-
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>픽셀 디자인과 부드러운 애니메이션을 결합해 사용자의 흥미를 유도하는 개인 포트폴리오입니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+            <p>scroll() 이벤트로 가로 콘텐츠로 이동되도록 구현했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+            <p>각 폴더는 hover 이벤트 시 이미지와 텍스트 색이 변경되어 시각적 피드백을 제공하고, index()를 활용해 폴더별로 다른 콘텐츠가 나타나도록 설계했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+            <p>SCSS 변수와 mixin을 적극 활용해 색상, 여백, 타이포를 통일감 있게 관리하고 유지보수성을 높였습니다.</p>
+            </div>
+          </div>
         </div>
-
-
       </div>
     </div>
   </div>
@@ -600,20 +619,28 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 React를 사용하여 제작된 온라인 편집샵 홈페이지입니다.
-            배치는 Bootstrap을 사용하여 틀을 잡았고 그 외에 슬라이드 기능은 Swiper를
-            사용하여 기능을 넣었습니다. 상품 관련 장바구니는 Redux를 이용해 제품을
-            가져올 수 있도록 만들었고 상세 페이지는 React Router로 각각의 페이지를 만들었습니다.
-            처음 하는 React 작업이다 보니 Swiper 에서부터 작업에 문제가 생겼습니다. 그로 인해
-            구글에서 검색하여 React Swiper 사용하는 법을 찾아 여러 차례 코드 수정을 하여 성공했고,
-            Redux를 활용하여 상품을 장바구니로 옮기는 과정에서도 많은 문제가 생겼습니다.
-            이 부분은 검색해도 어려운 부분이 너무 많아 선생님에게 도움을 받아 해결했습니다.
-            이것 말고도 이 페이지에 제작은 많은 어려움을 겪었습니다. 끊임없는 오류가 발생했고
-            해결하기 위해 검색 후 다시 코드를 짜고를 무수히 반복했습니다. Js의 이해심이
-            부족하여 제가 원하는 만큼의 작업물이 안 나왔고 이번 제작을 기회로 React 경험과
-            Js의 공부 중요성을 다시 한번 배웠습니다.
-          </p>
+          <div class="popup__procedure-description">
+          <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>UI를 재사용 가능한 컴포넌트 단위로 설계하고 구현했습니다.</p>
+          </div>
+          <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>React state와 props를 활용해 동적인 화면 상태를 관리했습니다.</p>
+          </div>
+          <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>React Router로 페이지 라우팅과 URL 관리를 처리했습니다.</p>
+          </div>
+          <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>fetch 또는 axios로 API를 연동해 외부 데이터를 받아와 화면에 반영했습니다.</p>
+          </div>
+          <div class="textwrap">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>UCreate React App 환경에서 빌드부터 배포까지 프로젝트를 완성했습니다.</p>
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -656,15 +683,38 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 온라인 서점을 주제로 HTML, CSS를 사용하여 웹 페이지를 구현하는 작업이었습니다.
-            카카오 API를 활용해 다양한 책의 제목에 대한 정보를 가져와, 이를 HTML 요소에 반영했습니다.
-            각 리스트 배열에 담긴 책 제목을 하나씩 API에 전달하여 결과를 받아왔고,
-            $.ajax 메서드를 사용해 API 요청을 보냈습니다. 응답받은 데이터에서는
-            책의 썸네일, 제목, 저자 정보를 받아와서 화면에 보여줄 수 있도록 했습니다.
-            반복적인 작업을 위해 for 문을 사용하여 배열의 각 요소에 대해 API 요청을 보내어
-            데이터를 화면에 보여지게 구현했습니다.
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                책 제목들을 배열에 담아 각각 카카오 API로 요청을 보내 받아온 썸네일 제목 저자 정보를 해당 리스트 아이템에 차례대로 붙였습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                각 배열마다 대상 DOM 요소를 골라 응답받은 데이터가 정확한 위치에 들어가도록 반복문 안에서 처리하였습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                리스트 탭과 버튼에 클릭 이벤트를 걸어 선택한 항목만 보이고 나머지는 숨기면서 자연스럽게 전환되게 구현하였습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                더보기 버튼을 누르면 콘텐츠 영역 높이가 부드럽게 커졌다가 다시 줄어드는 애니메이션 효과를 적용하여 사용자 경험을 향상시켰습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                스크롤 위치에 따라 특정 섹션들이 살짝 올라오면서 나타나도록 CSS 트랜지션을 적용했습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -706,15 +756,38 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 일본 각 지역 행사를 소개주제로 서브페이지의 슬라이더 부분과 반응형, 팝업창설정을 담당하였습니다.
-            화면 첫번째 슬라이더에서는 2500ms로 설정하고,두 번째 슬라이더에서는 3500ms로 설정하여
-            두 슬라이더가 동시에 넘어가지 않도록 구현했습니다.
-            또한, 반응형을 적용하는 과정에서 breakpoints 설정을 통해 화면 크기에 맞는 슬라이드 개수를 다르게 조정했습니다.
-            이번 작업에서는 각각 다른 페이지를 작업하고 병합하는거다 보니
-            전체적인 디자인을 일관성 있게하여 하나의 사이트처럼 보여지게 하였고
-            팀원들과의 적극적인 소통과 회의를 통한 조율을 하며 협업을 배울수 있는 기회을 얻게되었었습니다.
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                해당 팀 협동 페이지는 일본 각 지역 행사소개 주제로 서브페이지의 슬라이더 부분과 반응형, 팝업창설정을 담당하였습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                화면 첫번째 슬라이더에서는 2500ms로 설정하고,두 번째 슬라이더에서는 3500ms로 설정하여 두 슬라이더가 동시에 넘어가지 않도록 구현하여 사용자경험을 향상 시켰습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                반응형을 적용하는 과정에서 breakpoints 설정을 통해 화면 크기에 맞는 슬라이드 개수를 다르게 조정했습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                여행의 자유로움을 상징하는 종이비행기 모티브를 로고에 적용하여 여행 감성이 느껴지도록 브랜드 아이덴티티를 만들었습니다.
+              </p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                팀원들과의 적극적인 소통과 회의를 통한 조율을 하며 협업을 어떤식으로 해야하는지를 배울수 있는 경험이었습니다.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -758,15 +831,24 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 지브리스튜디오를 주제로 HTML,CSSjQuery를 이용하여 반응형으로 작업하였습니다.
-            카드 네비게이션으로 버튼을 클릭하면 특정 카드를 보여주고 나머지는 숨기는 기능을 사용했습니다.
-            카드는 transform-style: preserve-3d와 rotateY(180deg)을 사용하여 3d로 회전하며 뒷면이 보이도록 구현했습니다.
-            동적인 애니메이션을 구현하고 싶어서 스크롤 위치를 추적하고, 각 요소가 화면에 가까워지면 opacity transform 속성을 사용하여 서서히 나타나도록 적용했습니다.
-            슬라이드 기능에서는 prependTo와 appendTo 메서드를 사용하여 마지막 항목을 맨 앞에 추가하고,
-            첫 번째 항목을 맨 뒤로 보내는 방식으로 슬라이드를 구현했습니다. animate()를
-            통해 슬라이드 이동을 부드럽게 처리하며, 화면 크기에 맞게 margin-left로 조정하였습니다.
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>카드 내비게이션은 버튼 클릭 이벤트 핸들러를 설정하고, .fadeIn(), .hide()를 적용하여 해당 카드 요소를 표시하고 나머지는 숨기는 방식으로 구성했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>각 카드는 transform-style: preserve-3d와 rotateY(180deg)를 통해 3D로 회전하며 뒷면을 보여줍니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>스크롤 위치를 추적하여, 각 요소가 화면에 가까워지면 opacity transform 속성을 사용하여 서서히 나타나도록 적용했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>prependTo와 appendTo 메서드를 사용하여 마지막 항목을 맨 앞에 추가하고, 첫 번째 항목을 맨 뒤로 보내는 방식으로 슬라이드를 구현했습니다.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -780,8 +862,8 @@
       <div class="popup__slides">
         <div class="popup__swiper swiper mySwiper">
           <div class="popup__swiper-wrapper swiper-wrapper">
-            <div class="popup__slide swiper-slide"><img src="img/popupimg6-1.png" alt="The Ceramics 팝업이미지1"></div>
-            <div class="popup__slide swiper-slide"><img src="img/popupimg6-2.png" alt="The Ceramics 팝업이미지2"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg6-2.png" alt="The Ceramics 팝업이미지1"></div>
+            <div class="popup__slide swiper-slide"><img src="img/popupimg6-1.png" alt="The Ceramics 팝업이미지2"></div>
           </div>
           <div class="popup__swiper-button-next swiper-button-next"></div>
           <div class="popup__swiper-button-prev swiper-button-prev"></div>
@@ -795,7 +877,7 @@
         </div>
         <div class="popup__details-info">
           <h3>project</h3>
-          <p>2024.01.08~01.23</p>
+          <p>2024.01.08~01.15</p>
           <p>제작인원 :1명</p>
           <p>기여도 100%</p>
         </div>
@@ -809,11 +891,32 @@
         </div>
         <div class="popup__procedure">
           <h3 class="popup__procedure-title">project PROCEDURE</h3>
-          <p class="popup__procedure-description">
-            해당 작업물은 첫 번째 프로젝트로, 소품샵을 주제로 하여 HTML, CSS, jQuery만을
-            사용하여 만들었습니다.기초적인 CSS만을 사용하였고 주로 HOVER 효과로 표현하였습니다.
-            이번 작업은 처음이니만큼 HTML과 CSS의 기본을 충실히 익히고자 작업하였습니다.
-          </p>
+          <div class="popup__procedure-description">
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>공통 스타일은 common.css, 각 페이지별 스타일은 별도로 분리해 유지보수성을 높였습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>핀터레스트에서 제품 분위기에 어울리는 웹사이트 UI를 수집하고, 이를 바탕으로 전체 구조를 구상했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>디자인 스타일에 어울리는 비슷한 느낌의 한글 폰트를 찾아 적용했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>꽃 일러스트와 도형 등의 오브젝트를 포토샵과 일러스트레이터로 제작하여 디자인 퀄리티를 높였습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>제작한 오브젝트를 <code>position</code> 속성으로 정밀하게 배치하며 화면을 구성했습니다.</p>
+            </div>
+            <div class="textwrap">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>버튼 hover 시 scale 효과, footer에는 회전 애니메이션을 적용해 인터랙션을 고려했습니다.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -823,8 +926,26 @@
     <div class="resume__container">
       <h1 class="resume__title point_font">RESUME</h1>
       <div class="resume__content">
-        <div class="resume__details">
-          <div class="resume__section resume__section--experience">
+        <div class="resume__details fade-in-left">
+          <!-- 타임라인 선 추가 -->
+           <div class="timeline">
+            <div class="timeline__item">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline__item">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline__item">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline__item">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+           </div>
+           <div class="resume_Wrap">
+          <!-- 위 컨텐츠 -->
+           <div class="resume__section resume__section--experience">
+            <div class="1"></div>
             <h3 class="resume__subtitle">EXPERIENCE</h3>
             <ul class="resume__list">
               <li class="resume__item">
@@ -840,7 +961,8 @@
                 </p>
               </li>
             </ul>
-          </div>
+          </div> 
+          <!-- 아래 컨텐츠 -->
           <div class="resume__section resume__section--education">
             <h3 class="resume__subtitle">EDUCATION</h3>
             <ul class="resume__list">
@@ -857,10 +979,10 @@
                 </p>
               </li>
             </ul>
-          </div>
-
+          </div> 
         </div>
-        <div class="resume__skills">
+        </div>
+        <div class="resume__skills fade-in-right">
           <ul class="resume__skills-list">
             <li class="resume__skill">
               <div class="resume__skill-box">
@@ -891,18 +1013,24 @@
       </div>
     </div>
   </section>
- <!--마지막 섹션-->
+ <!-- contact 섹션-->
   <section id="contact">
-    <div class="contact__container">
-      <h2 class="contact__title point_font">CONTACT</h2>
+    <div class="contact__container fade-in-up">
+      <p class="contact__title point_font">
+        <span style="--i:0">C</span>
+        <span style="--i:1">O</span>
+        <span style="--i:2">N</span>
+        <span style="--i:3">T</span>
+        <span style="--i:4">A</span>
+        <span style="--i:5">C</span>
+        <span style="--i:6">T</span>
+      </p>
       <div class="contact__message">
-        <p>
           <span>저에 대해 더 궁금한 점이 있으신가요?</span>
-          <br>
         <p class="contact__text-detail">아래 주소로 메일을 보내주세요!</p>
-        </p>
         <span class="contact__arrow"></span>
       </div>
+      <!-- 메일주소 / git -->
       <div class="contact__links">
         <a class="contact__link contact__link--email" href="mailto:duddk9804@naver.com">
           <i class="fa-solid fa-envelope"></i>
@@ -913,12 +1041,13 @@
       </div>
     </div>
   </section>
+  <!-- 컨텐츠 종료 -->
   <!-- 스크립트 -->
   <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
   <script src="js/Jquery.js"></script>
-  <script src="js/main.js"></script>
 </body>
-
 </html>

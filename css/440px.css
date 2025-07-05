@@ -1,0 +1,35 @@
+@media all and (max-width: 440px) {
+  .resume__skill-description {
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+
+  .resume__skill-title {
+    font-size: 1.5rem;
+  }
+
+  .contact__message span {
+    font-size: 1.3rem;
+  }
+
+  .resume__container {
+    border-radius: 3.25rem;
+  }
+
+  .project__items .project__item--details {
+    gap: 4rem;
+  }
+
+  .project__type {
+    font-size: 1.9rem;
+  }
+
+  .project__description--text {
+    display: none;
+  }
+
+  .project__button,
+  .project__site_button {
+    padding: 0.9rem 1rem;
+  }
+}

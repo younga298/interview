@@ -1,0 +1,102 @@
+@media (max-width: 991px) {
+  /* profile 섹션 */
+  .profile__skills-box-details {
+    margin-bottom: 1.2rem;
+  }
+
+  .fa-circle-check:before {
+    font-size: 34px;
+    padding: 0;
+  }
+
+  .profile__skills-box-details {
+    font-size: 1rem;
+  }
+
+  .profile__skills-box-description {
+    font-size: 1.1rem;
+  }
+
+  .profile__skills-box-details {
+    padding: 2rem 1.2rem;
+  }
+
+  .profile__intro-text {
+    font-size: 1.39rem;
+    min-width: 290px;
+  }
+
+  .profile__skills-box > li {
+    padding-left: 0.68rem;
+  }
+
+  /* work 섹션 */
+  .project__header {
+    padding-top: 13rem;
+  }
+  .project__item {
+    flex: 1 1 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .project__items {
+    flex-wrap: wrap;
+  }
+
+  /* popup 섹션 */
+  .popup__content {
+    flex-direction: column;
+  }
+  .popup__slides,
+  .popup__details {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+  .popup__close {
+    z-index: 2;
+  }
+  
+  .popup .popup__swiper-button-prev {
+  top: clamp(100px, 28vh, 250px);
+  left: clamp(20px, 5vw, 80px);
+  }
+
+  .popup .popup__swiper-button-next {
+    top: clamp(100px, 28vh, 250px);
+    right: clamp(20px, 5vw, 80px);
+    }
+
+  /* RESUME 섹션 */
+  .resume__skills-list {
+    padding-left: 0rem;
+    padding-top: 6rem;
+  }
+
+  .resume__content {
+    flex-wrap: wrap;
+  }
+
+  .resume__details,
+  .resume__skills {
+    flex: 1 1 100%;
+  }
+
+  .resume__content {
+    padding-left: 0;
+  }
+
+  .resume__title {
+    padding: 4rem 0 0 0rem;
+  }
+  .resume__content {
+    gap: 0;
+  }
+
+  .resume__container {
+    padding: 0rem 2rem 4rem 2rem;
+  }
+
+  .resume_Wrap {
+    width: 100%;
+  }
+}

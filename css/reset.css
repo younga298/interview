@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--peach-50);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 변수 */
+:root {
+  /* 배경컬러 */
+  --bg-color: white;
+  /* 연한 살구빛 */
+  --peach-50: #fff9f0;
+  /* 연한 블루 */
+  --blue-100: #92b4ec;
+  /* 진한 블루 */
+  --blue-500: #7193d5;
+  /* 연한 옐로우 */
+  --yellow-100: #ffe69a;
+  /* 부드러운 옐로우 */
+  --yellow-200: #ffe680;
+  /* 진한 옐로우 */
+  --yellow-500: #ffd24c;
+  /* 중간 어두운 회색 */
+  --gray-700: #707070;
+  /* 밝은 회색*/
+  --gray-100: #f1f1f1;
+}
+
+/* 폰트 */
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
