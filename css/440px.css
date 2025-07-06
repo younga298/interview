@@ -1,19 +1,14 @@
 @media all and (max-width: 440px) {
-  .resume__skill-description {
-    padding-left: 0;
-    padding-top: 0.5rem;
+  /* home 섹션 */
+  .home__text-sub {
+    font-size: 5rem;
   }
-
-  .resume__skill-title {
-    font-size: 1.5rem;
+  .home__text-parent {
+    font-size: 3rem;
   }
-
-  .contact__message span {
-    font-size: 1.3rem;
-  }
-
-  .resume__container {
-    border-radius: 3.25rem;
+  /* work 섹션 */
+  .project__preview img {
+    min-width: 240px;
   }
 
   .project__items .project__item--details {
@@ -31,5 +26,36 @@
   .project__button,
   .project__site_button {
     padding: 0.9rem 1rem;
+  }
+
+  .project__items {
+    gap: 0;
+  }
+
+  .point_font {
+    font-size: 3.25rem;
+  }
+
+  .resume__subtitle {
+    font-size: 1.58rem;
+  }
+
+  /* 경력/기술 섹션 */
+  .resume__skill-description {
+    padding-left: 0;
+    padding-top: 0.5rem;
+  }
+
+  .resume__skill-title {
+    font-size: 1.5rem;
+  }
+
+  /* 컨텐츠 섹션 */
+  .contact__message span {
+    font-size: 1.3rem;
+  }
+
+  .resume__container {
+    border-radius: 3.25rem;
   }
 }

@@ -627,7 +627,7 @@ header.hidden {
 }
 
 .resume__subtitle {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-family: "Cafe24Ssurround";
   color: var(--blue-100);
 }
